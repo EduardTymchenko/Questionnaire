@@ -13,7 +13,7 @@
 <header>
     <h2>Statistic</h2>
 </header>
-<%! private static Object global = 0;%>
+
 <a href="index.jsp">Back to questionnaire</a>
 <p>1. Do you like Java? - Yes:${rez[0]}  ,No: ${rez[1]} </p>
 <p>2. Do you like .NET? - Yes:${rez[2]} ,No:${rez[3]} </p>
