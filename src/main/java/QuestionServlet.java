@@ -43,9 +43,18 @@ public class QuestionServlet extends HttpServlet {
         person.setAge(request.getParameter("age"));
         pesons.add(person);
 
+        toResposeStatistic(request);
+        request.getRequestDispatcher("/statistic.jsp").forward(request, response);
+    }
+    @Override
+    protected void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException, ServletException {
+        toResposeStatistic(request);
+        request.getRequestDispatcher("/statistic.jsp").forward(request, response);
+    }
+    private void toResposeStatistic(HttpServletRequest request){
         request.setAttribute("pers", pesons);
         request.setAttribute("rez", results);
         request.setAttribute("total", pesons.size());
-        request.getRequestDispatcher("/statistic.jsp").forward(request, response);
+
     }
 }

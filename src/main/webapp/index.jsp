@@ -46,7 +46,7 @@
     <hr>
     <input type="reset">
     <input type="submit">
-    <a href="statistic.jsp">View the results</a>
+    <a href="/question" >View the results</a>
 </form>
 </body>
 </html>
